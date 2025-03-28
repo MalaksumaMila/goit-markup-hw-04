@@ -51,6 +51,8 @@ img {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -95,17 +97,38 @@ img {
 }
 
 .header-menu-item {
-  display: flex;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-menu-item.current {
+  position: relative;
+}
+
+.header-menu-item.current::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
+
+  width: 100%;
+  height: 4px;
+
+  background-color: #404bbf;
 }
 
 .header-menu-item:hover,
-.header-menu-item:focus {
+.header-menu-item:focus,
+.header-menu-item.current {
   color: #404bbf;
 }
 
@@ -130,6 +153,7 @@ img {
   color: #434455;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts-link:hover,
@@ -141,8 +165,17 @@ img {
 
 .hero {
   background-color: #2e2f42;
-  /* margin-bottom: 120px; */
   padding: 188px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .hero-container {
@@ -216,6 +249,18 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.features-list-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 .features-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -284,6 +329,25 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+}
+
+.team-list-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 16px 32px 16px;
+  gap: 24px;
+  /* width: calc((100% - 160px) / 3); */
+}
+.team-list-socials-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.team-list-socials-icon {
+}
+.team-list-socials-icon-svg {
 }
 
 /*portfolio*/
