@@ -462,12 +462,16 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
   display: flex;
-  justify-content: right;
-  gap: 120px;
+  justify-content: left;
+  align-items: flex-end;
+  /* gap: 20px; */
 }
 
-.container-footer {
-  /* padding-right: 120px; */
+.container.container-footer {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .footer-logo-link {
@@ -479,7 +483,8 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   display: inline-block;
-  margin-bottom: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .footer-logo-accent {
@@ -501,6 +506,7 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .container.container-footer-socials {
@@ -512,6 +518,8 @@ img {
 }
 
 .footer-list-socials-icon {
+  width: 40px;
+  height: 40px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
