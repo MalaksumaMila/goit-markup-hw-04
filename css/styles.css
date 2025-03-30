@@ -471,11 +471,11 @@ img {
   align-items: baseline;
 }
 
-.container.container-footer {
+.container-footer {
   /* padding-left: 120px;
   padding-right: 120px; */
   margin-right: 120px;
-  margin-left: 120px;
+  /* margin-left: 120px; */
 }
 
 .footer-logo-link {
@@ -509,16 +509,20 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  margin-bottom: 16px;
 }
 
-.container.container-footer-socials {
+.container-footer-socials {
   justify-content: space-between;
   margin: 0;
   /* display: flex;
   justify-content: right;
   align-items: center; */
+}
+
+.footer-list-socials {
+  display: flex;
+  gap: 16px;
 }
 
 .footer-list-socials-icon {
