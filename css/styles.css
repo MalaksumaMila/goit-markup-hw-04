@@ -476,7 +476,7 @@ img {
   align-items: baseline;
   justify-content: flex-start;
   /* margin-left: auto; */
-  /* margin-right: 120px; */
+  margin-right: 120px;
 }
 
 .container-footer {
@@ -487,7 +487,6 @@ img {
   margin-left: 60px;
   /* padding-left: 120px;
   padding-right: 120px; */
-  /* margin-left: 120px; */
 }
 
 .footer-logo-link {
