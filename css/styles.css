@@ -483,7 +483,8 @@ img {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 120px 0 40px;
+  margin-right: 120px;
+  margin-left: 60px;
   /* padding-left: 120px;
   padding-right: 120px; */
   /* margin-left: 120px; */
