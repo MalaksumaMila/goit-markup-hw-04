@@ -526,11 +526,12 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .container-footer-socials {
   justify-content: space-between;
+  margin-bottom: 16px;
   /* margin: 0; */
   /* display: flex;
   justify-content: right;
