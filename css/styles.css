@@ -343,7 +343,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8px;
+  margin-top: 8px;
   /* margin: 8px 16px 32px 16px; */
   gap: 24px;
   /* width: calc((100% - 160px) / 3); */
@@ -477,8 +477,8 @@ img {
   align-items: baseline;
   justify-content: flex-start;
   /* margin-left: auto; */
-  margin-right: 120px;
-  padding-left: 40px;
+  /* margin-right: 120px;
+  padding-left: 40px; */
 }
 
 .container-footer {
