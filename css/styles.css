@@ -531,7 +531,7 @@ img {
 
 .container-footer-socials {
   justify-content: space-between;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
   /* margin: 0; */
   /* display: flex;
   justify-content: right;
